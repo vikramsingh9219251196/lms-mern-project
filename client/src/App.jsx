@@ -13,7 +13,7 @@ import CourseList from "./Pages/Course/CourseList";
 import Contact from "./Pages/Contact";
 import Denied from "./Pages/Denied";
 import CourseDescription from "./Pages/Course/CourseDescription";
-
+import VideoCall from "./Pages/VideoCall/Videocall";
 import RequireAuth from "./Components/auth/RequireAuth";
 import CreateCourse from "./Pages/Course/CreateCourse";
 import Profile from "./Pages/User/Profile";
@@ -64,7 +64,7 @@ function App() {
           <Route path="/checkout/fail" element={<CheckoutFail />} />
           <Route path="/course/displaylectures" element={<DisplayLecture />} />
   
-  
+    <Route path="/videocall" element={<VideoCall />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
