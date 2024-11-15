@@ -23,7 +23,6 @@ import CheckoutFail from "./Pages/Payment/CheckoutFail";
 import DisplayLecture from "./Pages/Dashboard/DisplayLecture";
 import AddLecture from "./Pages/Dashboard/AddLecture";
 import AdminDashboard from "./Pages/Dashboard/AdminDashboard";
-import VideoCall from "./Pages/VideoCall/Videocall";
 
 function App() {
   return (
@@ -64,7 +63,6 @@ function App() {
           <Route path="/checkout/success" element={<CheckoutSuccess />} />
           <Route path="/checkout/fail" element={<CheckoutFail />} />
           <Route path="/course/displaylectures" element={<DisplayLecture />} />
-          <Route path="/videocall" element={<VideoCall />} />
   
   
         </Route>
