@@ -58,7 +58,7 @@ export default function CourseDescription() {
               </p>
             </div>
 
-            {role === "ADMIN" || data?.subscription?.status === "active" ? (
+            {/* {role === "ADMIN" || data?.subscription?.status === "active" ? (
               <button
                 onClick={() =>
                   navigate("/course/displaylectures", { state: { ...state } })
@@ -67,6 +67,7 @@ export default function CourseDescription() {
               >
                 Watch lectures
               </button>
+              
             ) : (
               <button
                 onClick={() => navigate("/checkout")}
@@ -74,7 +75,34 @@ export default function CourseDescription() {
               >
                 Subscribe
               </button>
-            )}
+            )} */}
+            {role === "ADMIN" || data?.subscription?.status === "active" ? (
+  <>
+    <button
+      onClick={() =>
+        navigate("/course/displaylectures", { state: { ...state } })
+      }
+      className="bg-orange-500 dark:bg-orange-600 text-white text-xl rounded-md font-bold px-5 py-3 w-full transition-all ease-in-out duration-300 mb-3"
+    >
+      Watch Lectures
+    </button>
+
+    <button
+      onClick={() => navigate("/videocall")}
+       className="bg-blue-500 dark:bg-blue-600 text-white text-xl rounded-md font-bold px-5 py-3 w-full transition-all ease-in-out duration-300"
+    >
+     Join Video Call
+    </button>
+  </>
+) : (
+  <button
+    onClick={() => navigate("/checkout")}
+    className="bg-orange-500 dark:bg-orange-600 text-white text-xl rounded-md font-bold px-5 py-3 w-full transition-all ease-in-out duration-300"
+  >
+    Subscribe
+  </button>
+)}
+
           </div>
         </div>
       </section>
