@@ -13,7 +13,7 @@ import CourseList from "./Pages/Course/CourseList";
 import Contact from "./Pages/Contact";
 import Denied from "./Pages/Denied";
 import CourseDescription from "./Pages/Course/CourseDescription";
-import VideoCall from "./Pages/VideoCall/Videocall";
+import VideoCall from "./Pages/VideoCall/VideCall";
 import RequireAuth from "./Components/auth/RequireAuth";
 import CreateCourse from "./Pages/Course/CreateCourse";
 import Profile from "./Pages/User/Profile";
