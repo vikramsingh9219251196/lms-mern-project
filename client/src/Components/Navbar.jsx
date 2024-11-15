@@ -23,7 +23,16 @@ export default function Navbar() {
   }, [darkMode]);
 
   return (
-    <nav className="sticky top-0 z-50 md:h-[72px] h-[65px] md:px-[35px] px-[15px] bg-[#ffffffd0] dark:bg-[#21242bc5] shadow-custom backdrop-blur-md flex justify-end">
+     <nav className="sticky top-0 z-50 md:h-[72px] h-[65px] md:px-[35px] px-[15px] bg-[#ffffffd0] dark:bg-[#21242bc5] shadow-custom backdrop-blur-md flex items-center">
+    {/* Heading in the Center */}
+    <div className="flex-1 flex justify-center">
+  <h1 className="text-8xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 brightness-125 hover:scale-110 transition-transform duration-300">
+    BRIDGE - ED
+  </h1>
+</div>
+
+    {/* Dark Mode Button */}
+    <div className="flex-none">
       <button className="p-5 rounded-full text-lg font-semibold">
         {darkMode ? (
           <FaSun size={26} className="text-white" onClick={toggleDarkMode} />
@@ -35,6 +44,7 @@ export default function Navbar() {
           />
         )}
       </button>
-    </nav>
+    </div>
+  </nav>
   );
 }
