@@ -113,7 +113,7 @@ export default function Checkout() {
 
               <p className="flex items-center justify-center gap-1 text-2xl font-bold text-yellow-500">
                 <BiRupee />
-                <span>499</span>
+                <span>150</span>
               </p>
 
               <div className="text-xs">
